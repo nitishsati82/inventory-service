@@ -9,4 +9,4 @@ COPY build/libs/${PROJECT_NAME}-${PROJECT_VERSION}.jar inventory.jar
 
 EXPOSE 8082
 
-ENTRYPOINT ["sh","-c","java -jar /inventory.jar --server.port=8085"]
+ENTRYPOINT ["sh","-c","java -jar /inventory.jar --server.port=8082"]
