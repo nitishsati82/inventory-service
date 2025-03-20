@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: inventory-service
+  datasource:
+    url: ${DB_CONNECTION_STRING}
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: ecomm
+server:
+  servlet:
+    context-path: /inventory
