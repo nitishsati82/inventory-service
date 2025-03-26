@@ -7,6 +7,6 @@ ENV PROJECT_VERSION=0.0.1-SNAPSHOT
 
 COPY build/libs/${PROJECT_NAME}-${PROJECT_VERSION}.jar inventory.jar
 
-EXPOSE 8082
+EXPOSE 8081
 
-ENTRYPOINT ["sh","-c","java -jar /inventory.jar --server.port=8082"]
+ENTRYPOINT ["sh","-c","java -jar /inventory.jar --server.port=8081"]
